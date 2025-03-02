@@ -2,7 +2,7 @@
 title: "预测现在"
 subtitle: "Weekly paper 12"
 date: 2023-03-31
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['data science']
 categories: ['notes']

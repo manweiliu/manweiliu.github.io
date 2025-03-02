@@ -2,7 +2,7 @@
 title: "我们不生产谎言，只是帮你说服你自己"
 subtitle: "Weekly paper 2"
 date: 2023-01-08
-draft: false
+draft: true
 author: "Manwei Liu"
 tags: ['political']
 categories: ['notes']

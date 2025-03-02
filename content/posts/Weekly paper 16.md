@@ -2,7 +2,7 @@
 title: "艺术与艺术家"
 subtitle: "Weekly paper 16"
 date: 2023-04-22
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['art']
 categories: ['notes']

@@ -2,7 +2,7 @@
 title: "一些是非对错"
 subtitle: "Weekly paper 4"
 date: 2023-01-22
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['cognition'] 
 categories: ['notes']

@@ -2,7 +2,7 @@
 title: "一千个打工人眼中有一千个理想的收入分布"
 subtitle: "Weekly paper 13"
 date: 2023-04-01
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['redistribution']
 categories: ['notes']

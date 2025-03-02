@@ -2,7 +2,7 @@
 title: "如何讲故事"
 subtitle: "Weekly paper 15"
 date: 2023-04-15
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['narrative']
 categories: ['notes']

@@ -2,7 +2,7 @@
 title: "Big data is like teenage sex"
 subtitle: "Weekly paper 11"
 date: 2023-03-29
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['data science']
 categories: ['notes']

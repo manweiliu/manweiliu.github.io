@@ -2,7 +2,7 @@
 title: "选举与选票"
 subtitle: "Weekly paper 10"
 date: 2023-03-05
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['political']
 categories: ['notes']

@@ -2,7 +2,7 @@
 title: "平等之路道坚且长"
 subtitle: "Weekly paper 3"
 date: 2023-01-15
-draft: false
+draft: true
 author: "Manwei Liu"
 tags: ['gender', 'discrimination']
 categories: ['notes']

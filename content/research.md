@@ -1,36 +1,20 @@
 ---
-title: "About Me"
-date: 2025-03
+title: "Research"
+date: 2025-03-02
 draft: false
-description: "About me"
+description: "My Research"
 
 lightgallery: true
 
+toc:
+  enable: true
+  auto: true
 math:
   enable: true
 ---
 
-> Hi there!:wave:
->
-> I am an assistant professor of economics at Nanjing Audit University.
-> 
-> I am interested in how beliefs are formed and how actions are steered in the social context.
->
-> You can reach me at liumanwei :a: nau.edu.cn 
----
-
-## Education
-
-* 2014.09 ~ 2020.12 Tilburg University, Ph.D Economics
-* 2012.09 ~ 2014.07 Renmin University of China, M.A Economics
-* 2008.09 ~ 2012.07 Renmin University of China, B.A Economics
-
----
-
-## Research
-
-### Working paper
-:(fas fa-layer-group fa-fw): **Counteracting Narratives: Evidence from an Online Experiment**, with [Sili Zhang](www.silizhang.com), conditionally accepted, the Economic Journal
+## Working paper
+:(fas fa-layer-group fa-fw): **Counteracting Narratives: Evidence from an Online Experiment**, with [Sili Zhang](www.silizhang.com), *conditionally accepted*, the Economic Journal
 
 People are swayed by biased narratives, even when they know the bias and the random assignment of those biased narratives. Further consumption of information does not always help.
 
@@ -41,6 +25,7 @@ Can people counteract biased narratives with subsequent information? Using an on
 
 {{< /admonition >}}
 
+---
 
 :(fas fa-layer-group fa-fw): **Majority voting or dictatorship? How collective-choice rules affect institutional design and cooperation**, with Eline van der Heijden
 
@@ -53,6 +38,7 @@ Collective-choice rules aggregate individual choices into a collective choice. T
 
 {{< /admonition >}}
 
+---
 
 :(fas fa-layer-group fa-fw): **The relativity of moral judgments**
 
@@ -66,11 +52,13 @@ Moral judgments are important factors in individual decision-making and interper
 {{< /admonition >}}
 
 
-### Work in progress
+## Work in progress
 
 :(fas fa-layer-group fa-fw): **Mistakes or misbeliefs? Decomposing strategic naivety about undisclosed information**, with [Tingting Wu](https://sites.google.com/view/tingtingwuecon/home)
 
 Is no news bad news? Theories say so; otherwise it wouldn't be withheld. But people in our study behave naively as if no news suggests a mixture of good and bad news. Incorrect beliefs about their opponents cannot account for the mistakes. People simply struggle with abductive reasoning and even more with Bayesian updating.
+
+---
 
 :(fas fa-layer-group fa-fw): **When to feed the Leviathan: Trading-off between efficiency, fairness, and the intrinsic value of power**, with Yadi Yang
 
@@ -78,20 +66,19 @@ Are people willing to delegate decisions to a centralized institution that coerc
 
 ---
 
-## Teaching
+## 中文
 
 {{< admonition info "List" false >}}
 {{< version 0.2.10 >}}
 
-* Behavioral economics (BA, MA)
-* Games and markets
-* How to write clearly ([materials](../posts/writing-clarity))
+* 周业安, 黄国宾, 何浩然, & 刘曼微. (2014). 领导者真能起到榜样作用吗?——一项基于公共品博弈实验的研究. 管理世界, (10), 75-90.
+* 周业安, 黄国宾, 何浩然, & 刘曼微. (2015). 集体领导者与个人领导者——一项公共品博弈实验研究. 财贸经济, 36(5), 20-34.
 
 {{< /admonition >}}
 
 ---
 
-## Presentations
+# Presentations
 
 {{< admonition info "List" false >}}
 {{< version 0.2.10 >}}
@@ -115,20 +102,5 @@ Are people willing to delegate decisions to a centralized institution that coerc
 * The 5th Annual International Workshop on Economic Analysis of Institutions, Xiamen University 
 
 {{< /admonition >}}
-
----
-
-## 中文发表
-
-{{< admonition info "List" false >}}
-{{< version 0.2.10 >}}
-
-* 周业安, 黄国宾, 何浩然, & 刘曼微. (2014). 领导者真能起到榜样作用吗?——一项基于公共品博弈实验的研究. 管理世界, (10), 75-90.
-* 周业安, 黄国宾, 何浩然, & 刘曼微. (2015). 集体领导者与个人领导者——一项公共品博弈实验研究. 财贸经济, 36(5), 20-34.
-
-{{< /admonition >}}
-
-> Download a pdf of my [CV]().
-
 
 

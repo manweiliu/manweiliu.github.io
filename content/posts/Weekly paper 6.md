@@ -2,7 +2,7 @@
 title: "贫穷与暴力的遗传"
 subtitle: "Weekly paper 6"
 date: 2023-02-08
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['poverty','violence']
 categories: ['notes']

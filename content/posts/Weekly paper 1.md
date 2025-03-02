@@ -2,7 +2,7 @@
 title: "法外狂徒"
 subtitle: "Weekly paper 1"
 date: 2023-01-01
-draft: false
+draft: true
 author: "Manwei Liu"
 tags: ['crime', 'network']
 categories: ['notes']

@@ -2,7 +2,7 @@
 title: "观察数据、实验和调查问卷"
 subtitle: "Weekly paper 14"
 date: 2023-04-08
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['methods']
 categories: ['notes']

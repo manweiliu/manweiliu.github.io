@@ -2,7 +2,7 @@
 title: "效率不高，都怪手机/app..."
 subtitle: "Weekly reading 5"
 date: 2023-02-01
-draft: false
+draft: true
 author: 'Manwei Liu'
 tags: ['media', 'efficiency']
 categories: ['notes']
