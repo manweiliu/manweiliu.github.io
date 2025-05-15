@@ -13,7 +13,6 @@ math:
   enable: true
 ---
 
-## Working paper
 :(fas fa-layer-group fa-fw): **Counteracting Narratives: Evidence from an Online Experiment**, with [Sili Zhang](www.silizhang.com), *accepted*, the Economic Journal
 
 People are swayed by biased narratives, even when they know the bias and the random assignment of those biased narratives. Further consumption of information does not always help.
@@ -26,6 +25,8 @@ Can people counteract biased narratives with subsequent information? Using an on
 {{< /admonition >}}
 
 ---
+
+## Working paper
 
 :(fas fa-layer-group fa-fw): **Majority voting or dictatorship? How collective-choice rules affect institutional design and cooperation**, with Eline van der Heijden
 
@@ -83,6 +84,7 @@ Are people willing to delegate decisions to a centralized institution that coerc
 {{< admonition info "List" false >}}
 {{< version 0.2.10 >}}
 
+* 2025 ESA Asia-Pacific Meeting, Osaka
 * 2023 Tsinghua Conference on Behavioral, Experimental and Theoretical Economics
 * 2023 ESA World Meeting
 * 2nd CeDEx China Workshop on Behavioural and Experimental Economics
