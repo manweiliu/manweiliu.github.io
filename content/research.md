@@ -14,7 +14,7 @@ math:
 ---
 
 ## Working paper
-:(fas fa-layer-group fa-fw): **Counteracting Narratives: Evidence from an Online Experiment**, with [Sili Zhang](www.silizhang.com), *conditionally accepted*, the Economic Journal
+:(fas fa-layer-group fa-fw): **Counteracting Narratives: Evidence from an Online Experiment**, with [Sili Zhang](www.silizhang.com), *accepted*, the Economic Journal
 
 People are swayed by biased narratives, even when they know the bias and the random assignment of those biased narratives. Further consumption of information does not always help.
 
