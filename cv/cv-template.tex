@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+
+% ----- geometry -----
+\usepackage[margin=0.7in, top=0.6in, bottom=0.6in]{geometry}
+
+% ----- fonts -----
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Times New Roman}
+\setCJKmainfont{Noto Sans SC Light}[
+  BoldFont = Noto Sans SC,
+  ItalicFont = Noto Sans SC Light
+]
+
+% ----- links -----
+\usepackage[colorlinks=true, urlcolor=black, linkcolor=black, citecolor=black]{hyperref}
+
+% ----- no page numbers -----
+\pagenumbering{gobble}
+
+% ----- spacing -----
+\usepackage{setspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\renewcommand{\baselinestretch}{0.95}
+
+% ----- section formatting (no numbering) -----
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\large\bfseries\uppercase}
+  {}{0em}{}[\vspace{-2pt}\rule{\textwidth}{0.8pt}]
+\titlespacing*{\section}{0pt}{14pt plus 2pt}{4pt plus 1pt}
+
+% ----- subsection (for paper titles) -----
+\titleformat{\subsection}
+  {\normalfont\normalsize\itshape}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+% ----- subsubsection (for status/labels) -----
+\titleformat{\subsubsection}
+  {\normalfont\small\bfseries}
+  {}{0em}{}
+\titlespacing*{\subsubsection}{0pt}{2pt}{0pt}
+
+% ----- description list tweaks -----
+\usepackage{enumitem}
+\setlist[description]{
+  style=unboxed,
+  leftmargin=1.5em,
+  labelindent=0pt,
+  itemindent=-0.5em,
+  itemsep=2pt,
+  parsep=0pt,
+  font={\normalfont\normalsize}
+}
+
+% ----- compact itemize -----
+\setlist[itemize]{
+  leftmargin=1.5em,
+  itemsep=1pt,
+  parsep=0pt
+}
+
+% ----- fancy header -----
+\usepackage{fancyhdr}
+\pagestyle{empty}
+
+% ----- pandoc compatibility -----
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+  {\LARGE\bfseries $name$}
+
+  \vspace{4pt}
+  {\small $email$ \hfill $website$ \hfill $address$}
+\end{center}
+
+\vspace{6pt}
+
+% ===== BODY =====
+$body$
+
+\vfill
+\begin{center}
+  {\small \textit{Last updated: $lastupdated$}}
+\end{center}
+
+\end{document}

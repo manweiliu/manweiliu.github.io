@@ -1,0 +1,61 @@
+{{ define "main" }}
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <img src="/images/avatar.jpg" alt="" class="avatar" width="96" height="96">
+      <h1 class="site-title">Manwei Liu</h1>
+      <p class="site-affiliation">Assistant Professor of Economics<br>Nanjing Audit University</p>
+      <nav class="sidebar-links">
+        <a href="mailto:liumanwei@nau.edu.cn" class="icon-link" title="liumanwei@nau.edu.cn" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4 12 13 2 4"/></svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user={{ .Site.Params.scholar }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5V15c0 1.5 3.6 3 8 3s8-1.5 8-3v-3.5"/><path d="M12 3 2 9l10 6 10-6-10-6Z"/></svg>
+        </a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="content-panel">
+    <div class="content">
+      <div class="intro-block">
+        <h2 class="section-heading">Bio</h2>
+        <p class="intro-line"><a href="/cv/cv.pdf" class="accent-link">Curriculum Vitae</a></p>
+        <p class="intro-text">I study how information and institutions shape beliefs, judgment, and choices, and how people navigate the structures they live in.</p>
+      </div>
+
+      <section class="research">
+        {{ range .Site.Data.research.publications.sections }}
+        <div class="research-section">
+          <h2 class="section-heading">{{ .name }}</h2>
+          {{ range $i, $p := .papers }}
+          <article class="paper">
+            <h3 class="paper-title">{{ $p.title | markdownify }}</h3>
+            {{ if .authors }}
+            <p class="paper-authors">{{ .authors | markdownify }}</p>
+            {{ end }}
+            <p class="paper-status">{{ .status | markdownify }}</p>
+            <div class="paper-links">
+              {{ range .links }}
+              <a href="{{ .url }}">{{ .label }}</a>
+              {{ end }}
+              {{ if .abstract }}<details class="paper-details"><summary>Abstract ▾</summary></details>{{ end }}
+            </div>
+            {{ if .abstract }}
+            <div class="details-text">
+              <p>{{ .abstract | markdownify }}</p>
+            </div>
+            {{ end }}
+          </article>
+          {{ end }}
+        </div>
+        {{ end }}
+      </section>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>&copy; {{ now.Format "2006" }} Manwei Liu</p>
+</footer>
+{{ end }}

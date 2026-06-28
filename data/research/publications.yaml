@@ -1,0 +1,41 @@
+sections:
+  - name: "Narratives and Belief Formation"
+    papers:
+      - title: "Counteracting Narratives: Evidence from an Online Experiment"
+        authors: "with [Sili Zhang](https://www.silizhang.com)"
+        status: "The Economic Journal, 136.673 (2026): 125-162"
+        abstract: "Can people counteract biased narratives — the qualitative interpretation of objective facts or events — through subsequent information acquisition? Using an online experiment, we investigate this question by first randomly assigning participants to read different narratives that contain the same facts, and then offering them the opportunity to acquire more balanced arguments. We document three main findings. First, participants shift their attitudes towards the standpoint of the randomly assigned narrative, knowing that the narrative is biased and randomly assigned. Second, the opportunity to read additional arguments does not prompt participants to adjust their attitudes shaped by the original narrative. Third, when evaluating subsequent arguments, participants see arguments aligned with the randomly assigned narrative as more convincing, which likely contributes to their inability to counteract biased narratives. Taken together, our results demonstrate a persistent effect of biased narratives in a setting where counteracting is given the best chance."
+        links:
+          - label: "PDF"
+            url: "/pdfs/LiuZhang2025_EJ_CounteractingNarratives.pdf"
+          - label: "Publisher Version"
+            url: "https://academic.oup.com/ej/article-abstract/136/673/125/8132912"
+
+      - title: "Subjective facts and objective opinions"
+        authors: "with [Sili Zhang](https://www.silizhang.com)"
+        abstract: "Facts are objective; opinions are subjective. Can people separate the two?"
+
+  - name: "Institutions and Cooperation"
+    papers:
+      - title: "Majority voting or dictatorship? How collective-choice rules affect institutional design and cooperation"
+        authors: "with Eline van der Heijden"
+        abstract: "Collective-choice rules aggregate individual choices into a collective choice. This experimental study addresses the role of collective-choice rules in self-governance via institutional design in a social dilemma. Groups decide repeatedly on whether to establish any institution, and if so which institutions, to sustain cooperation in a public goods game. We hypothesize that collective-choice rules may directly affect cooperation, conditional on having the same institutions. They may also have an indirect effect on cooperation, via institutional choices. We implement three collective-choice rules: majority voting, dictatorship and rotating dictatorship. Our main findings are: (1) cooperation level is not higher under the institutions chosen via a democratic rule than when the same institutions are chosen via a non-democratic rule. (2) Institutional choices made via majority voting or a fixed dictator are more stable over time than those chosen by rotating dictators. (3) The instability of institutions is associated with lower cooperation level. These results have implications for the organization of small-scale group-decision."
+
+      - title: "When to feed the Leviathan: Trading-off between efficiency, fairness, and the intrinsic value of power"
+        authors: "with Yadi Yang"
+        abstract: "Are people willing to delegate decisions to a centralized institution that coerces cooperation? It depends on their beliefs about others, their preference for efficiency and fairness, and how much they value having a say."
+
+  - name: "Biases and Judgments"
+    papers:
+      - title: "The relativity of moral judgments"
+        abstract: "Moral judgments are important factors in individual decision-making and interpersonal interactions. I examine the relativity of moral judgments, specifically, whether moral judgments toward a decision maker depend on the reference decision maker's choice. The results of an experiment show that people punish a decision maker who chooses an immoral action more harshly when they observe another moral choice than if they observe another immoral one. A contrast effect, rather than a shift in perceived social norms, accounts for the relativity. The relativity of moral judgments suggests that there exists non-monetary spillover effects of one's action on another."
+
+      - title: "Mistakes or misbeliefs? Decomposing strategic naivety about undisclosed information"
+        authors: "with [Tingting Wu](https://sites.google.com/view/tingtingwuecon)"
+        abstract: "Is no news bad news? Theories say so. But people behave as if no news could be either good or bad — not because they hold incorrect beliefs about others, but because they struggle with abductive reasoning."
+
+  - name: "Other Topics"
+    papers:
+      - title: "Auction Design with Aftermarket: How Auction Format Limits Signaling"
+        authors: "with Yanlin Chen"
+        abstract: "We study the optimal information design in auctions where the winner subsequently interacts with a third-party incumbent in an aftermarket. Our theory predicts that disclosing the winner's type creates a signaling incentive: bidders compete more aggressively to signal high economic efficiency to the incumbent, thereby increasing seller revenue. We test these predictions in a laboratory setting, varying the auction format (first-price or second-price) and the disclosure rule (full or none). While disclosure significantly increases revenue in FP auctions as predicted, the effect vanishes in SP auctions. This is driven by widespread and persistent overbidding in SP auctions, which pushes revenue above FP levels regardless of disclosure policy. We find that overbidding is more prevalent among bidders with higher economic efficiency and risk-seeking subjects, and exhibits a contagion effect: exposure to an overbidding opponent triggers spiteful or imitative overbidding in subsequent rounds. Our results suggest that the effect of information disclosure is sensitive to the auction format and behavioral anomalies can break the signaling mechanism in second-price auctions."

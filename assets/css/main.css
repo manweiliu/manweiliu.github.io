@@ -1,0 +1,488 @@
+/* ----- Reset & Base ----- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  color: #1a1a1a;
+  background: #fff;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.15s;
+}
+
+/* ----- Two-Column Layout ----- */
+.layout {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+  gap: 3.5rem;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  position: sticky;
+  top: 3rem;
+  align-self: flex-start;
+}
+
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-panel {
+  flex: 1;
+  min-width: 0;
+  background: #f4f7f3;
+  border-radius: 4px;
+  padding: 2rem 2.5rem;
+}
+
+/* ----- Sidebar ----- */
+.avatar {
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+}
+
+.site-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+
+.site-affiliation {
+  font-size: 0.82rem;
+  color: #888;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.sidebar-links {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.icon-link {
+  color: #3a5a3a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  transition: transform 0.15s, color 0.15s;
+}
+
+.icon-link:hover {
+  color: #3a5a3a;
+  transform: scale(1.12);
+}
+
+/* Accent links: colored, no underline until hover */
+.accent-link {
+  color: #3a5a3a;
+  text-decoration: none;
+  transition: text-decoration 0.15s;
+}
+
+.accent-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #3a5a3a;
+  text-underline-offset: 2px;
+}
+
+/* ----- Content ----- */
+.intro-block {
+  margin-bottom: 2.5rem;
+}
+
+.intro-block .section-heading {
+  margin-bottom: 0.6rem;
+}
+
+.intro-line {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.intro-text {
+  font-size: 0.92rem;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ----- Research Sections ----- */
+.research-section + .research-section {
+  margin-top: 2.5rem;
+}
+
+.section-heading {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #3a5a3a;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #dce3da;
+}
+
+/* ----- Paper ----- */
+.paper {
+  margin-bottom: 1.2rem;
+}
+
+.paper:last-child {
+  margin-bottom: 0;
+}
+
+.paper-header {
+  display: inline;
+}
+
+.paper-title {
+  display: inline;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1a1a1a;
+}
+
+.paper:last-child {
+  margin-bottom: 0;
+}
+
+.paper:last-child {
+  margin-bottom: 0;
+}
+
+.paper-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.paper-title {
+  display: inline;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1a1a1a;
+}
+
+.paper-authors {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #333;
+  line-height: 1.4;
+  margin-top: 0.15rem;
+  margin-bottom: 0.05rem;
+}
+
+.paper-authors a {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
+
+.paper-authors a:hover {
+  text-decoration-color: #333;
+}
+
+.paper-status {
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 0.15rem;
+}
+
+.paper-links {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.paper-links a {
+  color: #555;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  margin-right: 0.75rem;
+}
+
+.paper-links a:hover {
+  color: #3a5a3a;
+  text-decoration-color: #3a5a3a;
+}
+
+/* ----- Paper Metadata ----- */
+.paper-authors {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #333;
+  line-height: 1.4;
+  margin-top: 0.15rem;
+  margin-bottom: 0.05rem;
+}
+
+.paper-authors a {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
+
+.paper-authors a:hover {
+  text-decoration-color: #333;
+}
+
+.paper-status {
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 0.15rem;
+}
+
+.paper-links {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.paper-links a,
+.paper-details summary {
+  color: #555;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.paper-links a:hover,
+.paper-details summary:hover {
+  color: #3a5a3a;
+  text-decoration-color: #3a5a3a;
+}
+
+/* ----- Abstract Toggle ----- */
+.paper-details {
+  display: inline;
+}
+
+.paper-details summary {
+  display: inline;
+  list-style: none;
+}
+
+.paper-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.details-text {
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.paper:has(.paper-details[open]) .details-text {
+  display: block;
+}
+
+.details-text p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #444;
+  padding-left: 0.5rem;
+  border-left: 2px solid #dce3da;
+}
+
+.paper-details {
+  margin-left: 0.15rem;
+}
+
+.paper-details summary {
+  list-style: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.paper-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.toggle-icon {
+  font-size: 0.6rem;
+  color: #3a5a3a;
+  user-select: none;
+  transition: transform 0.15s;
+  display: inline-block;
+}
+
+.paper:has(.paper-details[open]) .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.details-text {
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.paper:has(.paper-details[open]) .details-text {
+  display: block;
+}
+
+.details-text p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #444;
+  padding-left: 0.5rem;
+  border-left: 2px solid #dce3da;
+}
+
+/* ----- Footer ----- */
+.site-footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3rem;
+  text-align: center;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+/* ----- Dark Mode ----- */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #e0e0e0;
+    background: #121212;
+  }
+
+  .content-panel {
+    background: #1a1e19;
+  }
+
+  .accent-link {
+    color: #7a9a7a;
+  }
+
+  .accent-link:hover {
+    text-decoration-color: #7a9a7a;
+  }
+
+  .icon-link {
+    color: #7a9a7a;
+  }
+
+  .icon-link:hover {
+    color: #7a9a7a;
+  }
+
+  .intro-text {
+    color: #e0e0e0;
+  }
+
+  .section-heading {
+    color: #7a9a7a;
+    border-bottom-color: #2a3a2a;
+  }
+
+  .paper-title {
+    color: #e0e0e0;
+  }
+
+  .paper-authors {
+    color: #ccc;
+  }
+
+  .paper-authors a {
+    color: #ccc;
+    text-decoration-color: #555;
+  }
+
+  .paper-authors a:hover {
+    text-decoration-color: #ccc;
+  }
+
+  .paper-status {
+    color: #e0e0e0;
+  }
+
+  .paper-links a,
+  .paper-details summary {
+    color: #999;
+  }
+
+  .paper-links a:hover,
+  .paper-details summary:hover {
+    color: #7a9a7a;
+    text-decoration-color: #7a9a7a;
+  }
+
+  .paper-details p {
+    color: #aaa;
+    border-left-color: #2a3a2a;
+  }
+
+  .site-footer {
+    color: #555;
+  }
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 720px) {
+  .layout {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .sidebar {
+    flex: none;
+    position: static;
+    width: 100%;
+  }
+
+  .sidebar-inner {
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .content-panel {
+    padding: 1.5rem 1.25rem;
+  }
+}
