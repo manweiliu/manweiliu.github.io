@@ -12,4 +12,8 @@ pandoc "$DIR/cv.md" \
   --pdf-engine=xelatex \
   -o "$DIR/cv.pdf"
 
-echo "✅ CV generated: $DIR/cv.pdf"
+# Copy to static/ so the website's /cv/cv.pdf link works
+mkdir -p "$DIR/../static/cv"
+cp "$DIR/cv.pdf" "$DIR/../static/cv/cv.pdf"
+
+echo "✅ CV generated: $DIR/cv.pdf (copied to static/cv/)"

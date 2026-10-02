@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 
-% ----- geometry -----
-\usepackage[margin=0.7in, top=0.6in, bottom=0.6in]{geometry}
+% ----- page: single column, white background, black text, normal margins -----
+\usepackage[margin=1in]{geometry}
 
 % ----- fonts -----
 \usepackage{fontspec}
@@ -12,59 +12,43 @@
   ItalicFont = Noto Sans SC Light
 ]
 
-% ----- links -----
-\usepackage[colorlinks=true, urlcolor=black, linkcolor=black, citecolor=black]{hyperref}
-
-% ----- no page numbers -----
-\pagenumbering{gobble}
-
-% ----- spacing -----
-\usepackage{setspace}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
-\renewcommand{\baselinestretch}{0.95}
-
-% ----- section formatting (no numbering) -----
+% ----- section headings: uppercase + rule -----
 \usepackage{titlesec}
 \titleformat{\section}
   {\normalfont\large\bfseries\uppercase}
-  {}{0em}{}[\vspace{-2pt}\rule{\textwidth}{0.8pt}]
-\titlespacing*{\section}{0pt}{14pt plus 2pt}{4pt plus 1pt}
-
-% ----- subsection (for paper titles) -----
-\titleformat{\subsection}
-  {\normalfont\normalsize\itshape}
   {}{0em}{}
-\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+  [\vspace{-2pt}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{16pt}{8pt}
 
-% ----- subsubsection (for status/labels) -----
-\titleformat{\subsubsection}
-  {\normalfont\small\bfseries}
-  {}{0em}{}
-\titlespacing*{\subsubsection}{0pt}{2pt}{0pt}
-
-% ----- description list tweaks -----
+% ----- description lists (paper entries: title on its own line, abstract below) -----
 \usepackage{enumitem}
 \setlist[description]{
-  style=unboxed,
+  style=nextline,
   leftmargin=1.5em,
   labelindent=0pt,
-  itemindent=-0.5em,
-  itemsep=2pt,
-  parsep=0pt,
+  itemindent=0pt,
+  itemsep=10pt,
+  parsep=4pt,
+  topsep=4pt,
   font={\normalfont\normalsize}
 }
-
-% ----- compact itemize -----
 \setlist[itemize]{
   leftmargin=1.5em,
-  itemsep=1pt,
-  parsep=0pt
+  itemsep=2pt,
+  parsep=0pt,
+  topsep=3pt
 }
 
-% ----- fancy header -----
-\usepackage{fancyhdr}
+% ----- links: all black -----
+\usepackage[colorlinks=true, urlcolor=black, linkcolor=black, citecolor=black]{hyperref}
+
+% ----- paragraphs: no indent, modest skip -----
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% ----- no headers or page numbers -----
 \pagestyle{empty}
+\pagenumbering{gobble}
 
 % ----- pandoc compatibility -----
 \providecommand{\tightlist}{%
@@ -74,13 +58,13 @@
 
 % ===== HEADER =====
 \begin{center}
-  {\LARGE\bfseries $name$}
-
-  \vspace{4pt}
-  {\small $email$ \hfill $website$ \hfill $address$}
+  {\LARGE\bfseries $name$}\\[6pt]
+  {\small $email$ \;|\; $website$}\\[2pt]
+  {\small $address$}
 \end{center}
 
-\vspace{6pt}
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.5pt}
 
 % ===== BODY =====
 $body$
